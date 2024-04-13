@@ -69,35 +69,14 @@ int main(){
     cout << endl;
 
     // Test
-    vec1.push_back(2);
-    vec1.push_back(100002);
-    for(int i=0; i<vec1.size(); i++){
-        cout << "vec1[" << i << "]=" << vec1[i] << " "; 
+    vector<vector<int>> test = {{2, 5, 6, 9}, {10, 15, 16, 20}};
+    int index = 0;
+    for(int i=0; i<test.size(); i++){
+        if(test[i][0] <= 9 && test[i][test[0].size()-1] >= 9){
+            index = i;
+            break;
+        }
     }
-    cout << endl;
-    sort(vec1.begin(), vec1.end());
-    for(int i=0; i<vec1.size(); i++){
-        cout << "vec1[" << i << "]=" << vec1[i] << " "; 
-    }
-    cout << endl;
-    vec1.pop_back();
-    vec1.push_back(1234534636);
-    for(int i=0; i<vec1.size(); i++){
-        cout << "vec1[" << i << "]=" << vec1[i] << " "; 
-    }
-    cout << endl;
-    vector<string> strs1 = {"flower","flow","flight"};
-    for(const auto str : strs1)
-        cout << str << endl;
-    sort(strs1.begin(), strs1.end());
-    for(const auto str : strs1)
-        cout << str << endl;
-    string test4 = "123";
-    cout << (int)'a' << endl;
-    test4 = test4 + (char)50;
-    cout << test4 << endl;
 
-    int test = 1, temp = 0;
-    temp = test++;
-    cout << temp << test << endl;
+    cout << "Index = " << index << endl;
 }
