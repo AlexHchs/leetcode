@@ -1,1 +1,4 @@
-(set1.count(1) == 1) ? "true" : "false"
+while(temp != EMPTY){
+        printf("\n%d", stack[temp]);
+        temp--;
+    }
