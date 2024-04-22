@@ -9,9 +9,12 @@ int main(){
 
     jud = (*ptr == '\0') ? 't' : 'f';
 
-    printf("Output: str1 = %c", jud);
+    printf("Output: str1 = %c\n", jud);
 
-    
+    char number = '5';
+    int num = number - '0';
+
+    printf("Output: str1 = %d\n", num);
 
     return 0;
 }
